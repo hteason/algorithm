@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * !AC
  */
-public class _2020_07_09_é¢è¯•é¢˜_17_13_æ¢å¤ç©ºæ ¼ {
+public class _2020_07_09_ÃæÊÔÌâ_17_13_»Ö¸´¿Õ¸ñ {
     public static void main(String[] args) {
         System.out.println(respace(new String[]{"looked", "just", "like", "her", "brother"}, "jesslookedjustliketimherbrother"));
         System.out.println(respace(new String[]{}, "jesslookedjustliketimherbrother"));

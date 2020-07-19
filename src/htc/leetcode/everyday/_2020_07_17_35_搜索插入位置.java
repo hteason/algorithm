@@ -4,17 +4,17 @@ package htc.leetcode.everyday;
  * AC
  * https://leetcode-cn.com/problems/search-insert-position/
  */
-public class _2020_07_17_35_æœç´¢æ’å…¥ä½ç½® {
+public class _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ {
     public static void main(String[] args) {
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 5, 6}, 5));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 5, 6}, 2));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 5, 6}, 7));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 5, 6}, 0));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 6, 7}, 5));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 6, 7}, 4));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 6, 7}, 3));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1, 3, 6, 7}, -1));
-        System.out.println(new _2020_07_17_35_æœç´¢æ’å…¥ä½ç½®().searchInsert(new int[]{1}, 1));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 5, 6}, 5));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 5, 6}, 2));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 5, 6}, 7));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 5, 6}, 0));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 6, 7}, 5));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 6, 7}, 4));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 6, 7}, 3));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1, 3, 6, 7}, -1));
+        System.out.println(new _2020_07_17_35_ËÑË÷²åÈëÎ»ÖÃ().searchInsert(new int[]{1}, 1));
     }
 
     public int searchInsert(int[] nums, int target) {

@@ -2,9 +2,9 @@ package htc.leetcode.everyday;
 
 import java.util.Arrays;
 
-public class _2020_07_08_é¢è¯•é¢˜16_11_è·³æ°´æ¿ {
+public class _2020_07_08_ÃæÊÔÌâ16_11_ÌøË®°å {
     public static void main(String[] args) {
-        _2020_07_08_é¢è¯•é¢˜16_11_è·³æ°´æ¿ test = new _2020_07_08_é¢è¯•é¢˜16_11_è·³æ°´æ¿();
+        _2020_07_08_ÃæÊÔÌâ16_11_ÌøË®°å test = new _2020_07_08_ÃæÊÔÌâ16_11_ÌøË®°å();
         System.out.println(Arrays.toString(test.divingBoard(1, 2, 3)));
         System.out.println(Arrays.toString(test.divingBoard(1, 1, 3)));
         System.out.println(Arrays.toString(test.divingBoard(2, 5, 3)));

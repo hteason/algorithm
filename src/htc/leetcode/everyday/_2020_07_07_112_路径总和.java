@@ -2,7 +2,7 @@ package htc.leetcode.everyday;
 
 import htc.leetcode.datatype.TreeNode;
 
-public class _2020_07_07_112_è·¯å¾„æ€»å’Œ {
+public class _2020_07_07_112_Â·¾¶×ÜºÍ {
 
 
     public static void main(String[] args) {
@@ -37,10 +37,10 @@ public class _2020_07_07_112_è·¯å¾„æ€»å’Œ {
         } else if (root.left == null && root.right == null) {
             return root.val == sum;
         }
-        //å°†0åŠ åˆ°sumæ”¹ä¸ºsumå‡åˆ°0,å¯å‡å°‘å¤§éƒ¨åˆ†ä»£ç é‡
+        //½«0¼Óµ½sum¸ÄÎªsum¼õµ½0,¿É¼õÉÙ´ó²¿·Ö´úÂëÁ¿
         return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
 
-        //ä»¥ä¸‹ä¸ºç¹çè§£æ³•
+        //ÒÔÏÂÎª·±Ëö½â·¨
 //        hasPathSum(root, 0, sum);
 //        return flag;
     }
