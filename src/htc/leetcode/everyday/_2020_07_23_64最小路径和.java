@@ -3,6 +3,7 @@ package htc.leetcode.everyday;
 /**
  * AC
  * dp
+ * 可优化思路:原地算法,操作grid原数组
  * https://leetcode-cn.com/problems/minimum-path-sum/
  */
 public class _2020_07_23_64最小路径和 {
