@@ -1,15 +1,8 @@
 package htc.leetcode.tree;
 
-public class _101_对称二叉树 {
-	public static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
+import htc.leetcode.datatype.TreeNode;
 
-		TreeNode(int x) {
-			val = x;
-		}
-	}
+public class _101_对称二叉树 {
 
 	public static void main(String[] args) {
 		TreeNode t1 = new TreeNode(2);
