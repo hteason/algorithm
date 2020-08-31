@@ -6,10 +6,10 @@ import java.util.*;
  * AC:暴力,勉强过
  * https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
  */
-public class _2020_08_27_17_电话号码的字母组合 {
+public class _2020_08_26_17_电话号码的字母组合 {
 
     public static void main(String[] args) {
-        _2020_08_27_17_电话号码的字母组合 test = new _2020_08_27_17_电话号码的字母组合();
+        _2020_08_26_17_电话号码的字母组合 test = new _2020_08_26_17_电话号码的字母组合();
         System.out.println(test.letterCombinations("23"));
         System.out.println(test.letterCombinations("2323"));
         System.out.println(test.letterCombinations("234"));
