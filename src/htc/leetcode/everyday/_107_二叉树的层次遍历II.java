@@ -2,10 +2,16 @@ package htc.leetcode.everyday;
 
 import htc.leetcode.datatype.TreeNode;
 
-import java.util.*;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * AC
+ * 两个队列cur和next，迭代遍历，边遍历当前队列边存到内层List，遍历完一层存到外层List
+ * https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/
+ */
 public class _107_二叉树的层次遍历II {
 
     public static void main(String[] args) {
@@ -19,7 +25,7 @@ public class _107_二叉树的层次遍历II {
     }
 
     //BFS 慢
-    public List<List<Integer>> levelOrderBottom1(TreeNode root) {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         if (root == null) {
             return new ArrayList<>();
         }
@@ -45,7 +51,7 @@ public class _107_二叉树的层次遍历II {
     }
 
     //数组 超出内存限制
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+    public List<List<Integer>> levelOrderBottom2(TreeNode root) {
         if (root == null) {
             return new ArrayList<>();
         }
