@@ -1,26 +1,24 @@
-package htc.leetcode.tree;
+package htc.leetcode.everyday._2020._09;
 
 import htc.leetcode.datatype.tree.Node;
-import htc.leetcode.everyday._2020._09._2020_09_28_117_填充每个节点的下一个右侧节点指针II;
 
 import java.util.Deque;
 import java.util.concurrent.LinkedBlockingDeque;
 
 /**
  * AC
- * https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/
- * 参考，代码同 -> {@link _2020_09_28_117_填充每个节点的下一个右侧节点指针II#connect(Node)}
+ * BFS暴力
+ * https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/
  */
-public class _116_填充每个节点的下一个右侧节点指针 {
+public class _2020_09_28_117_填充每个节点的下一个右侧节点指针II {
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
-        root.right.left = new Node(6);
         root.right.right = new Node(7);
-        _116_填充每个节点的下一个右侧节点指针 test = new _116_填充每个节点的下一个右侧节点指针();
+        _2020_09_28_117_填充每个节点的下一个右侧节点指针II test = new _2020_09_28_117_填充每个节点的下一个右侧节点指针II();
         System.out.println(test.connect(root));
     }
 
