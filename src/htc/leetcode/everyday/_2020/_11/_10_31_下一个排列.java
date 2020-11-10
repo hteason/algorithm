@@ -74,9 +74,7 @@ public class _10_31_下一个排列 {
             }
             if (i == 1) {
                 for (int j = 0; j < len / 2; j++) {
-                    int tmp = nums[j];
-                    nums[j] = nums[len - j - 1];
-                    nums[len - j - 1] = tmp;
+                    swap(nums, j, len - j - 1);
                 }
             }
         }
