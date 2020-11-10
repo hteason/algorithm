@@ -34,15 +34,15 @@ public class _10_31_下一个排列 {
         test.nextPermutation(nums);
         System.out.println(Arrays.toString(nums));
 
-        nums = new int[]{5,4,7,5,3,2};
+        nums = new int[]{5, 4, 7, 5, 3, 2};
         test.nextPermutation(nums);
         System.out.println(Arrays.toString(nums));
 
-        nums = new int[]{2,2,7,5,4,3,2,2,1};
+        nums = new int[]{2, 2, 7, 5, 4, 3, 2, 2, 1};
         test.nextPermutation(nums);
         System.out.println(Arrays.toString(nums));
 
-        nums = new int[]{4,2,0,2,3,2,0};
+        nums = new int[]{4, 2, 0, 2, 3, 2, 0};
         test.nextPermutation(nums);
         System.out.println(Arrays.toString(nums));
     }
@@ -53,10 +53,8 @@ public class _10_31_下一个排列 {
             if (nums[i] > nums[i - 1]) {
                 //往i后找比i-1大的最小的数
                 int j = i;
-                if (j == len - 1) {
-                    if (nums[j] > nums[i - 1]) {
-                        j = len - 1;
-                    }
+                if (j == len - 1 && nums[j] > nums[i - 1]) {
+                    j = len - 1;
                 } else {
                     while (j < len - 1) {
                         if (nums[j] > nums[i - 1] && nums[j + 1] <= nums[i - 1]) {
@@ -65,7 +63,6 @@ public class _10_31_下一个排列 {
                         j++;
                     }
                 }
-                j = j >= len ? len - 1 : j;
                 swap(nums, j, i - 1);
                 //i后升序排列
                 for (int k = i; k < len; k++) {
@@ -73,7 +70,6 @@ public class _10_31_下一个排列 {
                         swap(nums, k, m);
                     }
                 }
-
                 return;
             }
             if (i == 1) {
