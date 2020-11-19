@@ -71,7 +71,7 @@ public class _19_283_移动零 {
      * 优化2
      * 减少遍历次数和判断第一个0的次数,0ms,击败100%
      */
-    public void moveZeroes(int[] nums) {
+    public void moveZeroes2(int[] nums) {
         int i;
         for (i = 0; i < nums.length; i++) {
             if (nums[i] == 0) {
@@ -92,6 +92,21 @@ public class _19_283_移动零 {
                     i++;
                 }
             }
+        }
+    }
+    /**
+     * 优化3
+     * 把非0放前面,记非0数量j，然后填充末尾len-j个数为0
+     */
+    public void moveZeroes(int[] nums) {
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[j++] = nums[i];
+            }
+        }
+        while (j < nums.length) {
+            nums[j++] = 0;
         }
     }
 }
