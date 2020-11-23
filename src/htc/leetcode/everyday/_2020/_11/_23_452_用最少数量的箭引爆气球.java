@@ -35,7 +35,7 @@ public class _23_452_用最少数量的箭引爆气球 {
         if (points == null || points.length == 0) {
             return 0;
         }
-        Arrays.sort(points, (x, y) -> x[0] > y[0] ? 1 : -1);
+        Arrays.sort(points, (p1, p2) -> p1[0] > p2[0] ? 1 : -1);
         int count = 1;
         for (int i = 1; i < points.length; i++) {
             int[] p1 = points[i - 1];
