@@ -20,25 +20,21 @@ public class _25_1370_ÉÏÉýÏÂ½µ×Ö·û´® {
 
     public String sortString(String s) {
         int[] map = new int[26];
-        int len = 0;
         for (char c : s.toCharArray()) {
             map[c - 'a']++;
-            len++;
         }
         StringBuilder sb = new StringBuilder();
-        while (len > 0) {
+        while (sb.length() != s.length()) {
             int i = 0;
             for (; i < 26; i++) {
                 if (map[i] != 0) {
                     sb.append((char) (i + 'a'));
-                    len--;
                     map[i]--;
                 }
             }
             for (i--; i >= 0; i--) {
                 if (map[i] != 0) {
                     sb.append((char) (i + 'a'));
-                    len--;
                     map[i]--;
                 }
             }
