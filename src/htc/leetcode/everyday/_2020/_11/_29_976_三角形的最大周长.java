@@ -1,4 +1,4 @@
-package htc.leetcode.everyday._2020;
+package htc.leetcode.everyday._2020._11;
 
 import java.util.Arrays;
 
@@ -8,9 +8,9 @@ import java.util.Arrays;
  *
  * @date 2020/11/29
  */
-public class _11_29_976_三角形的最大周长 {
+public class _29_976_三角形的最大周长 {
     public static void main(String[] args) {
-        _11_29_976_三角形的最大周长 test = new _11_29_976_三角形的最大周长();
+        _29_976_三角形的最大周长 test = new _29_976_三角形的最大周长();
         System.out.println(test.largestPerimeter(new int[]{2, 1, 2}));
         System.out.println(test.largestPerimeter(new int[]{1, 2, 1}));
         System.out.println(test.largestPerimeter(new int[]{3, 2, 3, 4}));
