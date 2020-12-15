@@ -1,5 +1,7 @@
 package htc.leetcode.everyday._2020._12;
 
+import java.util.Arrays;
+
 /**
  * AC
  * https://leetcode-cn.com/problems/monotone-increasing-digits/
@@ -28,9 +30,7 @@ public class _15_738_单调递增的数字 {
         char[] ns = String.valueOf(N).toCharArray();
         for (int i = 0, len = ns.length - 1; i < len; i++) {
             if (ns[i] > ns[i + 1]) {
-                for (int j = i + 1; j < len + 1; j++) {
-                    ns[j] = '9';
-                }
+                Arrays.fill(ns, i + 1, len + 1, '9');
                 ns[i]--;
                 while (i > 0 && ns[i] < ns[i - 1]) {
                     ns[i - 1]--;
@@ -39,10 +39,6 @@ public class _15_738_单调递增的数字 {
                 }
             }
         }
-        int ans = 0;
-        for (int n : ns) {
-            ans = ans * 10 + (n - '0');
-        }
-        return ans;
+        return Integer.parseInt(String.valueOf(ns));
     }
 }
