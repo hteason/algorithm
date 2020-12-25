@@ -17,13 +17,10 @@ public class _12_25_455_分发饼干 {
         System.out.println(test.findContentChildren(new int[]{1, 2}, new int[]{1, 1, 2}));
     }
 
-    public int findContentChildren1(int[] g, int[] s) {
+    public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(s);
         int count = 0;
         for (int a : g) {
-            if (count > g.length){
-                break;
-            }
             for (int j = 0; j < s.length; j++) {
                 if (a <= s[j] && s[j] != 0) {
                     s[j] = 0;
@@ -36,7 +33,7 @@ public class _12_25_455_分发饼干 {
     }
 
     //超时
-    public int findContentChildren(int[] g, int[] s) {
+    public int findContentChildren1(int[] g, int[] s) {
         Map<Integer, Integer> map = new TreeMap<>();
         for (int i : s) {
             map.put(i, map.getOrDefault(i, 0) + 1);
