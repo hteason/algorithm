@@ -22,7 +22,7 @@ public class _12_27_205_同构字符串 {
     }
 
     //AC 第一版
-    public boolean isIsomorphic(String s, String t) {
+    public boolean isIsomorphic1(String s, String t) {
         int[] map = new int[128];
         char[] ss = s.toCharArray();
         char[] ts = t.toCharArray();
@@ -43,6 +43,32 @@ public class _12_27_205_同构字符串 {
                 }
             } else {
                 map[ts[i]] = ss[i];
+            }
+        }
+        return true;
+    }
+
+    //AC 第二版 牺牲时间提升空间
+    public boolean isIsomorphic(String s, String t) {
+        int[] map1 = new int[128];
+        int[] map2 = new int[128];
+        char[] ss = s.toCharArray();
+        char[] ts = t.toCharArray();
+        for (int i = 0; i < ss.length; i++) {
+            if (map1[ss[i]] != 0) {
+                if (map1[ss[i]] != ts[i]) {
+                    return false;
+                }
+            } else {
+                map1[ss[i]] = ts[i];
+            }
+
+            if (map2[ts[i]] != 0) {
+                if (map2[ts[i]] != ss[i]) {
+                    return false;
+                }
+            } else {
+                map2[ts[i]] = ss[i];
             }
         }
         return true;
