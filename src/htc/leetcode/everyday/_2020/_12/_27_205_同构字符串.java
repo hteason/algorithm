@@ -6,9 +6,9 @@ package htc.leetcode.everyday._2020._12;
  *
  * @date 2020/12/27
  */
-public class _12_27_205_同构字符串 {
+public class _27_205_同构字符串 {
     public static void main(String[] args) {
-        _12_27_205_同构字符串 test = new _12_27_205_同构字符串();
+        _27_205_同构字符串 test = new _27_205_同构字符串();
         System.out.println(test.isIsomorphic("egg", "add"));
         System.out.println(test.isIsomorphic("foo", "bar"));
         System.out.println(test.isIsomorphic("paper", "title"));

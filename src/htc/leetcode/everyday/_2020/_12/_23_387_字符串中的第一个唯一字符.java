@@ -6,9 +6,9 @@ package htc.leetcode.everyday._2020._12;
  *
  * @date 2020/12/23
  */
-public class _12_23_387_字符串中的第一个唯一字符 {
+public class _23_387_字符串中的第一个唯一字符 {
     public static void main(String[] args) {
-        _12_23_387_字符串中的第一个唯一字符 test = new _12_23_387_字符串中的第一个唯一字符();
+        _23_387_字符串中的第一个唯一字符 test = new _23_387_字符串中的第一个唯一字符();
         System.out.println(test.firstUniqChar("leetcode"));
         System.out.println(test.firstUniqChar("loveleetcode"));
         System.out.println(test.firstUniqChar("a"));

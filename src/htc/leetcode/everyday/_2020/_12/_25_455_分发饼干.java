@@ -8,9 +8,9 @@ import java.util.TreeMap;
  * @author huangtingcheng
  * @date 2020/12/25
  */
-public class _12_25_455_分发饼干 {
+public class _25_455_分发饼干 {
     public static void main(String[] args) {
-        _12_25_455_分发饼干 test = new _12_25_455_分发饼干();
+        _25_455_分发饼干 test = new _25_455_分发饼干();
         System.out.println(test.findContentChildren(new int[]{1, 2, 3}, new int[]{3}));
         System.out.println(test.findContentChildren(new int[]{1, 2, 3}, new int[]{1, 1}));
         System.out.println(test.findContentChildren(new int[]{1, 2}, new int[]{1, 2, 3}));
