@@ -1,7 +1,6 @@
 package htc.leetcode.everyday._2021._01;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -35,7 +34,6 @@ public class _22_989_数组形式的整数加法 {
         if (carry != 0) {
             ans.add(1);
         }
-        Collections.reverse(ans);
         return ans;
     }
 }
